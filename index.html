@@ -96,8 +96,6 @@
     </div>
     <img class="advantage-img-left" src="#" alt="Картинка с каньоном">
     </section>
-
-  
   <section class="advantages">
     <ul class="advantages-list">
       <li class="advantages-item">
@@ -131,18 +129,43 @@
     <h2 class="subscription-header">Подпишитесь на рассылку</H2>
     <p class="subscrtion-block-text">Только полезная информация и никакого спама, честное бойскаутское!
     </p>
-    <input class="subscribe-email" type="email">Ваш e-mail</input>
+    <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+    <label class="visually-hidden" for="subscribe-email">Ваш e-mail</label>
+    <input type="email" name="subscribe-email" value="Ваш e-mail"></input>
+    <button class="email-submit" type="submit">Подписаться</button>
+    </form>
   </section>
 </main>
-<footer>
-<ul>
-  <li><img><!--соцсети--></mg></li>
-  <li><img><!--соцсети--></mg></li>
-  <li><img><!--соцсети--></mg></li>
-</ul>
-<caption></caption>
-<img><!--Лого ХтмлАкадеми--></mg>
+<footer class="page-footer">
+<section class="footer-social">
+  <h2 class="visually-hidden">Наши социальные сети</h2>
+  <ul class="socialmedia-list">
+    <li class="socialmedia-item">
+      <a class="socialmedia-item" href="https://vk.com/htmlacademy" >
+        <span class="visually-hidden">Вконтакте</span>
+      </a>
+    </li>
+    <li class="socialmedia-item">
+      <a class="socialmedia-item" href="https://t.me/htmlacademy" >
+        <span class="visually-hidden">Телеграм</span>
+      </a>
+    </li>
+    <li class="socialmedia-item">
+      <a class="socialmedia-item" href="https://www.youtube.com/user/htmlacademyru" >
+        <span class="visually-hidden">Ютуб</span>
+      </a>
+    </li>
+  </ul>
+</section>
+<section class="footer-phone">
+  <h2 class="visually-hidden">Наш телефон</h2>
+  <a style="footer-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</p> 
+</section>
+<section style="footer-logo">
+  <a href="https://htmlacademy.ru/">
+    <img class="made-by-htmlacademy" src="" alt="Сделано HthmlAcademy">
+  </a>
+</section>
 </footer>
-<!-- Подвал сайта-->
   </body>
 </html>

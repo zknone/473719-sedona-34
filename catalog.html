@@ -5,8 +5,128 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+<header class="page-header">
+  <nav class="navigation">
+    <a href="https://htmlacademy.ru/">
+      <img class="logo-nav" alt="Логотип Седона"><!--Лого--></img>
+    </a>
+    <ul class="navigation-list">
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">Главная</a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">О Седоне</a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">Гостиница</a>
+      </li>
+    </ul>
+    <ul class="navigation-list navigation-user">
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">
+          <span class="visually-hidden">
+            Поиск
+          </span>
+        </a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">
+          <span class="visually-hidden">
+            Избранное
+          </span>
+        </a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-button" href="#">Хочу сюда</a>
+      </li>
+    </ul>
+    
+  </nav>
+</header>
+<main class="catalog-page">
+  <section class="hotels-filter">
+    <header class="catalog-header">
+      <h1 class="catalog-header-title">Гостиницы Седоны</h1>
+    </header>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-home" href="index.html">
+          <span class="visually-hidden>">На главную</span>
+        </a>
+      </li>
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link">Гостиницы</a>
+      </li>
+    </ul>
+    <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+    <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+      <fieldset class="catalog-filter-group">
+        <legend class="catalog-filter-title">Инфраструктуры</legend>
+          <label class="control">
+            <input class="control-input" type="checkbox" name="pools-on">
+            Басейны
+          </label>
+          <label class="control">
+            <input class="control-input" type="checkbox" name="parking-on">
+            Парковка
+          </label>
+          <label class="control">
+            <input class="control-input" type="checkbox" name="wifi-on">
+            Wi-fi
+          </label>
+      </fieldset>
+      <fieldset class="catalog-filter-group">
+        <legend class="catalog-filter-title">Тип жилья</legend>
+          <label class="control">
+            <input class="control-input" type="radio" name="places" value="hotels-on">
+            Гостиницы
+          </label>
+          <label class="control">
+            <input class="control-input" type="radio" name="places" value="motels-on">
+            Мотели
+          </label>
+          <label class="control">
+            <input class="control-input" type="radio" name="places" value="appartements-on">
+            Аппартаменты
+          </label>
+      </fieldset>
+      <button class="button" type="submit">Применить</button>
+      <a href="catalog.html">Сбросить</a>
+      
+    </form>
+  </section>
+</main>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
-  </body>
-</html>
+<footer class="page-footer">
+  <section class="footer-social">
+    <h2 class="visually-hidden">Наши социальные сети</h2>
+    <ul class="socialmedia-list">
+      <li class="socialmedia-item">
+        <a class="socialmedia-item" href="https://vk.com/htmlacademy" >
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="socialmedia-item">
+        <a class="socialmedia-item" href="https://t.me/htmlacademy" >
+          <span class="visually-hidden">Телеграм</span>
+        </a>
+      </li>
+      <li class="socialmedia-item">
+        <a class="socialmedia-item" href="https://www.youtube.com/user/htmlacademyru" >
+          <span class="visually-hidden">Ютуб</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section class="footer-phone">
+    <h2 class="visually-hidden">Наш телефон</h2>
+    <a style="footer-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</p> 
+  </section>
+  <section style="footer-logo">
+    <a href="https://htmlacademy.ru/">
+      <img class="made-by-htmlacademy" src="" alt="Сделано HthmlAcademy">
+    </a>
+  </section>
+</footer>
+    </body>
+  </html>
