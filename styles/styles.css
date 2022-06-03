@@ -69,14 +69,23 @@ body {
 .main-index {}
 
 .intro-image {
-  background-image: url("images/index-background.jpg");
+  background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 .introduction {}
 
-.main-slogan {}
+.main-slogan {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.main-slogan-description {
+  font-size: 22px;
+  line-height:26px;
+}
 
 .advantages {}
 
@@ -107,9 +116,39 @@ body {
 .advantage-img-right {
 }
 
-.to-dos-list {}
+.to-do-list {
+  color:#333333;
+}
 
-.to-dos-item {}
+.to-do-list {
+  background-color: #FFFFFF;
+}
+
+.to-do-house {
+  background: url("../images/reason-1.svg") no-repeat center rgba(131, 179, 211, 0.12);
+}
+
+.to-do-food {
+  background: url("../images/reason-2.svg") no-repeat center #FFFFFF;
+
+
+}
+
+.to-do-souvenirs {
+  background: url("../images/reason-3.svg") no-repeat center rgba(131, 179, 211, 0.12);
+
+}
+
+.advantage-item-square {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantage-item-road {
+  background: rgba(131, 179, 211, 0.2);
+}
+.advantage-item-non-crowdy {
+  background: rgba(131, 179, 211, 0.12);
+}
 
 .to-do-icon {}
 
@@ -123,15 +162,27 @@ body {
 
 .search-conversion {}
 
-.search-conversion-header {}
+.search-conversion-header {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
 
-.search-conversion-block {}
+.search-conversion-block {
+  font-size: 22px;
+  line-height: 26px;
+}
 
-.subscription-block-main {}
+.subscription-block-main {
+  background-image: url("../images/background-subscribe.jpg");
+}
 
 .subscription-header {}
 
-.subscrtion-block-text {}
+.subscrtion-block-text {
+  font-size: 22px;
+  line-height: 26px;
+}
 
 .subscription-form {}
 
@@ -141,17 +192,37 @@ body {
 
 .footer-social {}
 
-.socialmedia-list {}
+.social-media-list {}
 
-.socialmedia-item {}
+.social-media-item {}
+
+.vkontakte-icon {
+  background: url("../images/social-logo-1.svg") center no-repeat;
+}
+
+.telegram-icon {
+  background: url("../images/social-logo-2.svg") center no-repeat;
+}
+
+.youtube-icon {
+  background: url("../images/social-logo-3.svg") center no-repeat;
+}
 
 .footer-phone {}
 
-.footer-phone-link {}
+.footer-phone-link {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
 
-.footer-logo {}
+.footer-logo {
+}
 
-.made-by-htmlacademy {}
+.made-by-html-academy {
+}
 
 .catalog-page {}
 
@@ -182,8 +253,6 @@ body {
 .control {}
 
 .control-input {}
-
-.button {}
 
 .filter-tab {}
 
@@ -219,7 +288,14 @@ body {
 
 .product-button-link {}
 
-.brown-button {}
+.brown-button { 
+  font-size: 20px;
+  font-weight: 700;
+  color:#FFFFFF;
+  background-color: #756157;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 .add-product {}
 
