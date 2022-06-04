@@ -45,54 +45,56 @@
   </header>
   <main class="catalog-page">
     <section class="hotels-filter">
-      <header class="catalog-header">
-        <h1 class="catalog-header-title">Гостиницы Седоны</h1>
-      </header>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-home" href="index.html">
-            <span class="visually-hidden>">На главную</span>
-          </a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Гостиницы</a>
-        </li>
-      </ul>
-      <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Инфраструктуры</legend>
-          <label class="control">
-            <input class="control-input" type="checkbox" name="pools-on">
-            Басейны
-          </label>
-          <label class="control">
-            <input class="control-input" type="checkbox" name="parking-on">
-            Парковка
-          </label>
-          <label class="control">
-            <input class="control-input" type="checkbox" name="wifi-on">
-            Wi-fi
-          </label>
-        </fieldset>
-        <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Тип жилья</legend>
-          <label class="control">
-            <input class="control-input" type="radio" name="places" value="hotels-on">
-            Гостиницы
-          </label>
-          <label class="control">
-            <input class="control-input" type="radio" name="places" value="motels-on">
-            Мотели
-          </label>
-          <label class="control">
-            <input class="control-input" type="radio" name="places" value="appartements-on">
-            Аппартаменты
-          </label>
-        </fieldset>
-        <button class="blue-button" type="submit">Применить</button>
-        <a href="catalog.html">Сбросить</a>
-      </form>
+      <div class="filter-background-image">
+        <header class="catalog-header">
+          <h1 class="catalog-header-title">Гостиницы Седоны</h1>
+        </header>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-home" href="index.html">
+              <span class="visually-hidden>">На главную</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
+        <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Инфраструктуры</legend>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="pools-on">
+              Басейны
+            </label>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="parking-on">
+              Парковка
+            </label>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="wifi-on">
+              Wi-fi
+            </label>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Тип жилья</legend>
+            <label class="control">
+              <input class="control-input" type="radio" name="places" value="hotels-on">
+              Гостиницы
+            </label>
+            <label class="control">
+              <input class="control-input" type="radio" name="places" value="motels-on">
+              Мотели
+            </label>
+            <label class="control">
+              <input class="control-input" type="radio" name="places" value="appartements-on">
+              Аппартаменты
+            </label>
+          </fieldset>
+          <button class="button-alternative" type="submit">Применить</button>
+          <a class="reset-button" href="catalog.html">Сбросить</a>
+        </form>
+      </div>
       <div class="filter-tab">
         <p class="filtered-quantity">Найдено гостиниц: 38</p>
         <select class="filter-select" aria-label="Сортировка">
@@ -103,17 +105,17 @@
       </div>
       <ul class="way-to-demonstrate-list">
         <li class="way-to-demonstrate-item">
-          <a class="demonstration-button" href="#">
+          <a class="way-to-demonstrate-item-table" href="#">
             <span class="visually-hidden">Показать карточки</span>
           </a>
         </li>
         <li class="way-to-demonstrate-item">
-          <a class="demonstration-button" href="#">
+          <a class="way-to-demonstrate-item-slideshow" href="#">
             <span class="visually-hidden">Показать в галерее</span>
           </a>
         </li>
         <li class="way-to-demonstrate-item">
-          <a class="demonstration-button" href="#">
+          <a class="way-to-demonstrate-item-listing" href="#">
             <span class="visually-hidden">Показать список</span>
           </a>
         </li>

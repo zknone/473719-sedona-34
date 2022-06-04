@@ -52,6 +52,18 @@ body {
   background-color: #756157;
 }
 
+.button-alternative {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
 /* навигация */
 
 .navigation-link {
@@ -233,4 +245,75 @@ body {
   text-decoration: none;
   color: #000000;
   background-color: #FFFFFF;
+}
+
+/* работа с каталогом */
+/* делаем фильтр */
+.filter-background-image {
+  background-image: url("../images/background-filter.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #000000;
+}
+
+.catalog-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.breadcrumbs-home {
+  background: url("../images/icon-go-home.svg") no-repeat;
+}
+
+.catalog-filter {
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.reset-button {
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.filtered-quantity {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filter-select {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.way-to-demonstrate-item-table {
+  background: url("../images/icon-table.svg") no-repeat;
+}
+
+.way-to-demonstrate-item-slideshow {
+  background: url("../images/icon-slideshow.svg") no-repeat;
+}
+
+.way-to-demonstrate-item-listing {
+  background: url("../images/icon-listing.svg") no-repeat;
 }
