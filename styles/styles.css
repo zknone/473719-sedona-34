@@ -39,34 +39,49 @@ body {
   color: #333333;
 }
 
-.page-header {
+.visually-hidden {}
 
+.button-basic {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756157;
 }
 
-.navigation {}
-
-.logo-nav {}
-
-.navigation-list {}
-
-.navigation-item {}
+/* навигация */
 
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  text-align:left;
+  text-align: left;
   text-decoration: none;
+}
+
+.navigation-item-search {
+  background: url("../images/search-icon.svg") center no-repeat;
 
 }
 
-.navigation-user {}
+.navigation-item-saved {
+  background: url("../images/icon-hearth.svg") center no-repeat;
+}
 
-.visually-hidden {}
+.navigation-button {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756157;
+}
 
-.navigation-button {}
-
-.main-index {}
+/* первый блок с заходной страницей */
 
 .intro-image {
   background-image: url("../images/index-background.jpg");
@@ -74,50 +89,45 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Второй блок со слоганом Седоны */
+
 .introduction {}
 
 .main-slogan {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  color: #000000;
+  background-color: #FFFFFF;
+
 }
 
 .main-slogan-description {
   font-size: 22px;
-  line-height:26px;
+  line-height: 26px;
 }
 
-.advantages {}
-
-.advantage-list {}
-
-.advantage-item {}
+/* Блок с преимуществами и причинами посетить Седону */
 
 .block-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .standalone-left {
-  color:#FFFFFF;
+  color: #FFFFFF;
   background-color: #82B3D3;
 }
 
 .standalone-right {
-  color:#FFFFFF;
+  color: #FFFFFF;
   background-color: #82B3D3;
 }
 
-.advantages-text {}
-
-.advantage-img-right {
-}
-
 .to-do-list {
-  color:#333333;
+  color: #333333;
 }
 
 .to-do-list {
@@ -146,21 +156,12 @@ body {
 .advantage-item-road {
   background: rgba(131, 179, 211, 0.2);
 }
+
 .advantage-item-non-crowdy {
   background: rgba(131, 179, 211, 0.12);
 }
 
-.to-do-icon {}
-
-.to-do-description {}
-
-
-
-.advantage-img-left {}
-
-.advantages-header {}
-
-.search-conversion {}
+/* Блок с поиском */
 
 .search-conversion-header {
   font-size: 30px;
@@ -173,28 +174,43 @@ body {
   line-height: 26px;
 }
 
+/* Блок с подпиской */
+
 .subscription-block-main {
   background-image: url("../images/background-subscribe.jpg");
 }
 
-.subscription-header {}
+.subscription-header {
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+  background-color: #000000;
+}
 
 .subscrtion-block-text {
   font-size: 22px;
   line-height: 26px;
+  color: #FFFFFF;
+  background-color: #000000;
 }
 
-.subscription-form {}
+.email-form-description {
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background: #F2F2F2;
+}
 
-.email-submit {}
+.email-submit-button {
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  background: #82B3D3;
+}
 
-.page-footer {}
-
-.footer-social {}
-
-.social-media-list {}
-
-.social-media-item {}
+/* Футер */
 
 .vkontakte-icon {
   background: url("../images/social-logo-1.svg") center no-repeat;
@@ -208,123 +224,13 @@ body {
   background: url("../images/social-logo-3.svg") center no-repeat;
 }
 
-.footer-phone {}
-
 .footer-phone-link {
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   text-align: center;
+  text-decoration: none;
+  color: #000000;
+  background-color: #FFFFFF;
 }
-
-.footer-logo {
-}
-
-.made-by-html-academy {
-}
-
-.catalog-page {}
-
-.hotels-filter {}
-
-.catalog-header {}
-
-.catalog-header-title {}
-
-.breadcrumbs {}
-
-.breadcrumbs-item {}
-
-.breadcrumbs-home {}
-
-.visually-hidden> {}
-
-.breadcrumbs-link {}
-
-.visually-hidden {}
-
-.catalog-filter {}
-
-.catalog-filter-group {}
-
-.catalog-filter-title {}
-
-.control {}
-
-.control-input {}
-
-.filter-tab {}
-
-.filtered-quantity {}
-
-.filter-select {}
-
-.way-to-demonstrate-list {}
-
-.way-to-demonstrate-item {}
-
-.demonstration-button {}
-
-.product-field {}
-
-.visualy-hidden {}
-
-.product-list {}
-
-.product-card {}
-
-.product-image-link {}
-
-.product-image {}
-
-.product-card-title {}
-
-.product-card-link {}
-
-.product-type {}
-
-.product-price {}
-
-.product-button-link {}
-
-.brown-button { 
-  font-size: 20px;
-  font-weight: 700;
-  color:#FFFFFF;
-  background-color: #756157;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.add-product {}
-
-.blue-button {}
-
-.rating-button {}
-
-.paginator {}
-
-.pagination-list {}
-
-.pagination-item {}
-
-.pagination-link {}
-
-.pagination-current {}
-
-.hotel-number {}
-
-.quantity-hotels {}
-
-.quantity-select {}
-
-.subscription-block-catalogue {}
-
-.subscription-header {}
-
-.subscrtion-block-text {}
-
-.subscription-form {}
-
-.email-submit {}
