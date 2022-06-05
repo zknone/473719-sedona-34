@@ -317,3 +317,58 @@ body {
 .way-to-demonstrate-item-listing {
   background: url("../images/icon-listing.svg") no-repeat;
 }
+
+/* Карточки */
+
+.product-card-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.product-type {
+  color: #333333;
+}
+
+.product-price {
+  color: #333333;
+}
+
+.rating-caption {
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+/* пагинация */
+
+.pagination-item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.pagination-link {
+  color: #FFFFFF;
+  background: #82B3D3;
+}
+
+.pagination-current {
+  color: #000000;
+  background: #F2F2F2;
+}
+
+.quantity-select {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
