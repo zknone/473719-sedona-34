@@ -277,7 +277,11 @@ body {
 /* работа с каталогом */
 /* делаем фильтр */
 
-
+.product-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 
 .filter-background-image {
