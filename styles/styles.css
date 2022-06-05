@@ -75,12 +75,13 @@ body {
 }
 
 .navigation-item-search {
-  background: url("../images/search-icon.svg") center no-repeat;
-
+  background: url("../images/search-icon.svg") center no-repeat #FFFFFF;
+  color: #000000;
 }
 
 .navigation-item-saved {
-  background: url("../images/icon-hearth.svg") center no-repeat;
+  background: url("../images/icon-favorite.svg") center no-repeat #FFFFFF;
+  color: #000000;
 }
 
 .navigation-button {
@@ -96,9 +97,8 @@ body {
 /* первый блок с заходной страницей */
 
 .intro-image {
-  background-image: url("../images/index-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background: url("../images/index-background.jpg") center no-repeat #000000;
+  color: #FFFFFF;
 }
 
 /* Второй блок со слоганом Седоны */
@@ -148,17 +148,20 @@ body {
 
 .to-do-house {
   background: url("../images/reason-1.svg") no-repeat center rgba(131, 179, 211, 0.12);
+  color: #333333;
+  ;
 }
 
 .to-do-food {
   background: url("../images/reason-2.svg") no-repeat center #FFFFFF;
-
-
+  color: #333333;
+  ;
 }
 
 .to-do-souvenirs {
   background: url("../images/reason-3.svg") no-repeat center rgba(131, 179, 211, 0.12);
-
+  color: #333333;
+  ;
 }
 
 .advantage-item-square {
@@ -189,21 +192,18 @@ body {
 /* Блок с подпиской */
 
 .subscription-block-main {
-  background-image: url("../images/background-subscribe.jpg");
+  background: url("../images/background-subscribe.jpg") center no-repeat #000000;
+  color: #FFFFFF;
 }
 
 .subscription-header {
   font-size: 30px;
   line-height: 36px;
-  color: #FFFFFF;
-  background-color: #000000;
 }
 
 .subscrtion-block-text {
   font-size: 22px;
   line-height: 26px;
-  color: #FFFFFF;
-  background-color: #000000;
 }
 
 .email-form-description {
@@ -225,15 +225,18 @@ body {
 /* Футер */
 
 .vkontakte-icon {
-  background: url("../images/social-logo-1.svg") center no-repeat;
+  background: url("../images/social-logo-1.svg") center no-repeat #FFFFFF;
+  color: #000000;
 }
 
 .telegram-icon {
-  background: url("../images/social-logo-2.svg") center no-repeat;
+  background: url("../images/social-logo-2.svg") center no-repeat #FFFFFF;
+  color: #000000;
 }
 
 .youtube-icon {
-  background: url("../images/social-logo-3.svg") center no-repeat;
+  background: url("../images/social-logo-3.svg") center no-repeat #FFFFFF;
+  color: #000000;
 }
 
 .footer-phone-link {
@@ -250,10 +253,8 @@ body {
 /* работа с каталогом */
 /* делаем фильтр */
 .filter-background-image {
-  background-image: url("../images/background-filter.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-color: #000000;
+  background: url("../images/background-filter.jpg") center no-repeat #000000;
+  color: #FFFFFF;
 }
 
 .catalog-header-title {
@@ -270,7 +271,8 @@ body {
 }
 
 .breadcrumbs-home {
-  background: url("../images/icon-go-home.svg") no-repeat;
+  background: url("../images/icon-go-home.svg") center no-repeat #000000;
+  color: #FFFFFF;
 }
 
 .catalog-filter {
@@ -307,15 +309,18 @@ body {
 }
 
 .way-to-demonstrate-item-table {
-  background: url("../images/icon-table.svg") no-repeat;
+  background: url("../images/icon-table.svg") center no-repeat #000000;
+  color: #FFFFFF;
 }
 
 .way-to-demonstrate-item-slideshow {
-  background: url("../images/icon-slideshow.svg") no-repeat;
+  background: url("../images/icon-slideshow.svg") center no-repeat #000000;
+  color: #FFFFFF;
 }
 
 .way-to-demonstrate-item-listing {
-  background: url("../images/icon-listing.svg") no-repeat;
+  background: url("../images/icon-listing.svg") center no-repeat #000000;
+  color: #FFFFFF;
 }
 
 /* Карточки */
