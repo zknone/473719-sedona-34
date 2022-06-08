@@ -30,7 +30,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -38,6 +46,16 @@ body {
   background-color: #FFFFFF;
   color: #333333;
 }
+
+.main-container {
+  flex-grow: 1;
+}
+
+.index-page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 
 .visually-hidden {}
 
@@ -65,6 +83,16 @@ body {
 }
 
 /* навигация */
+
+.logo-nav {
+  display: block;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
 
 .navigation-link {
   font-size: 20px;
@@ -97,9 +125,18 @@ body {
 }
 
 .navigation-list {
+  width: 520px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.navigation-user-list {
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
 }
 
 /* первый блок с заходной страницей */
@@ -117,7 +154,6 @@ body {
   text-transform: uppercase;
   color: #000000;
   background-color: #FFFFFF;
-
 }
 
 .main-slogan-description {
@@ -128,12 +164,6 @@ body {
 /* Блок с преимуществами и причинами посетить Седону */
 
 .advantage-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.to-do-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -157,38 +187,73 @@ body {
 }
 
 .to-do-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
   color: #333333;
   background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.to-do-item {
+  width: 400px;
 }
 
 .to-do-house {
   background: url("../images/reason-1.svg") no-repeat center rgba(131, 179, 211, 0.12);
   color: #333333;
-  ;
 }
 
 .to-do-food {
   background: url("../images/reason-2.svg") no-repeat center #FFFFFF;
   color: #333333;
-  ;
 }
 
 .to-do-souvenirs {
   background: url("../images/reason-3.svg") no-repeat center rgba(131, 179, 211, 0.12);
   color: #333333;
-  ;
+}
+
+/* Упаковывает одинокие преимущества в один элемент. Создает горизонтальный поток */
+.advantage-item-long {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+/* Упаковывает последний ряд преимуществ, направляет их горизонтально */
+.last-advantages-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 .advantage-item-square {
   background: rgba(131, 179, 211, 0.12);
+  width: 400px;
 }
 
 .advantage-item-road {
   background: rgba(131, 179, 211, 0.2);
+  width: 400px;
 }
 
 .advantage-item-non-crowdy {
   background: rgba(131, 179, 211, 0.12);
+  width: 400px;
+}
+
+.advantage-item-wrapper {
+  width: 400px;
+}
+
+.advantage-image-wrapper {
+  width: 800px;
 }
 
 /* Блок с поиском */
@@ -241,6 +306,24 @@ body {
 }
 
 /* Футер */
+.page-footer {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer-social {
+  width: 120px;
+}
+
+.footer-logo {
+  width: 115px;
+}
+
+.footer-phone {
+  width: 720;
+}
 
 .social-media-list {
   margin: 0;
