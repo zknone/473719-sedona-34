@@ -51,7 +51,7 @@ body {
   flex-grow: 1;
 }
 
-.index-page-container {
+.page-container {
   width: 1200px;
   margin: 0 auto;
 }
@@ -149,6 +149,7 @@ body {
 /* Второй блок со слоганом Седоны */
 
 .main-slogan {
+  padding: 0 290px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -157,6 +158,7 @@ body {
 }
 
 .main-slogan-description {
+  padding: 0 273px;
   font-size: 22px;
   line-height: 26px;
 }
@@ -176,6 +178,11 @@ body {
   text-transform: uppercase;
 }
 
+.advantage-item-wrapper {
+  padding: 0 85px;
+  width: 230px;
+}
+
 .standalone-left {
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -186,6 +193,7 @@ body {
   background-color: #82B3D3;
 }
 
+/* направляет ряд с причинами посещения горизонтально */
 .to-do-list {
   display: flex;
   flex-direction: row;
@@ -199,7 +207,8 @@ body {
 }
 
 .to-do-item {
-  width: 400px;
+  padding: 0 85px;
+  width: 230px;
 }
 
 .to-do-house {
@@ -235,21 +244,20 @@ body {
 
 .advantage-item-square {
   background: rgba(131, 179, 211, 0.12);
-  width: 400px;
+  padding: 0 85px;
+  width: 230px;
 }
 
 .advantage-item-road {
   background: rgba(131, 179, 211, 0.2);
-  width: 400px;
+  padding: 0 85px;
+  width: 230px;
 }
 
 .advantage-item-non-crowdy {
   background: rgba(131, 179, 211, 0.12);
-  width: 400px;
-}
-
-.advantage-item-wrapper {
-  width: 400px;
+  padding: 0 85px;
+  width: 230px;
 }
 
 .advantage-image-wrapper {
@@ -259,12 +267,14 @@ body {
 /* Блок с поиском */
 
 .search-conversion-header {
+  padding: 0 452px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
 .search-conversion-block {
+  padding: 0 304px;
   font-size: 22px;
   line-height: 26px;
 }
@@ -279,11 +289,18 @@ body {
 .subscription-header {
   font-size: 30px;
   line-height: 36px;
+  padding: 0 398px;
 }
 
 .subscrtion-block-text {
   font-size: 22px;
   line-height: 26px;
+  padding: 0 363px;
+}
+
+.subscription-form {
+  padding: 0 200px;
+  display: flex;
 }
 
 .email-form-description {
@@ -291,6 +308,7 @@ body {
   line-height: 21px;
   color: #000000;
   background: #F2F2F2;
+  width: 600px;
 }
 
 .email-submit-button {
@@ -303,22 +321,27 @@ body {
   color: #FFFFFF;
   background: #82B3D3;
   border: none;
+  width: 200px;
 }
 
 /* Футер */
-.page-footer {
+.page-footer-container {
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  justify-content: space-between;
 }
 
 .footer-social {
   width: 120px;
+  margin-right: auto;
+  padding: 0 72px;
 }
 
 .footer-logo {
   width: 115px;
+  display: block;
+  margin-left: auto;
+  padding: 0 72px;
 }
 
 .footer-phone {
@@ -359,13 +382,45 @@ body {
 
 /* работа с каталогом */
 /* делаем фильтр */
-
-.product-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+/* настройка потока для фильтров */
+.filter-block-wrapper {
+  margin: 0 auto;
+  width: 1200px;
 }
 
+.catalog-filter {
+  width: 1060px;
+  display: flex;
+  margin: 0 auto;
+  padding:0 70px;
+  flex-direction: row;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.filter-wrapper {
+  width: 370px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.catalog-filter-group {
+  width: 160px;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  border: none;
+}
+
+.filter-button-wrapper {
+  width: 161px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+  margin-left: auto;
+}
 
 .filter-background-image {
   background: url("../images/background-filter.jpg") center no-repeat #000000;
@@ -373,29 +428,26 @@ body {
 }
 
 .catalog-header-title {
+  display: flex;
+  padding-left: 70px;
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
 }
 
 .breadcrumbs {
+  display: flex;
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
   text-decoration: none;
   margin: 0;
-  padding: 0;
+  padding-left: 70px;
   list-style: none;
 }
 
 .breadcrumbs-home {
   background: url("../images/icon-go-home.svg") center no-repeat #000000;
-  color: #FFFFFF;
-}
-
-.catalog-filter {
-  font-size: 18px;
-  line-height: 21px;
   color: #FFFFFF;
 }
 
@@ -412,24 +464,36 @@ body {
   text-decoration: none;
 }
 
+/* верстка блоков представления карточек, сортировки, информации о колиечтсве выведенных позиций */
+.filter-tab {
+  display: flex;
+  padding: 0 71px;
+  justify-content: space-between;
+}
+
 .filtered-quantity {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+  width: 340px;
 }
 
 .filter-select {
+  width: 287px;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  padding-left: 191px;
+  padding-right: 81px;
 }
 
 .way-to-demonstrate-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 160px;
 }
 
 .way-to-demonstrate-item-table {
@@ -449,6 +513,31 @@ body {
 
 /* Карточки */
 
+/* внутренний стакан, чтобы удерживать именно три карточки */
+.product-field {
+  width: 1057px;
+  margin: 0 auto;
+}
+/* ставит три карточки в ряд */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding-right: 0;
+  list-style: none;
+  padding-inline-start: 0;
+}
+/* ровно просчитывает размер карточки */
+
+.product-card {
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .product-card-link {
   font-weight: 700;
   font-size: 24px;
@@ -459,10 +548,19 @@ body {
 
 .product-type {
   color: #333333;
+  width: 150px;
+  text-align: left;
 }
 
 .product-price {
   color: #333333;
+  width: 150px;
+  text-align: left;
+}
+
+.product-card-title {
+  width: 300px;
+  text-align: left;
 }
 
 .rating-caption {
@@ -470,6 +568,8 @@ body {
   line-height: 20px;
   color: #333333;
   text-transform: uppercase;
+  width: 150;
+  text-align: left;
 }
 
 .button-about {
@@ -480,6 +580,7 @@ body {
   text-decoration: none;
   background-color: #756157;
   color: #FFFFFF;
+  width: 150px;
 }
 
 .button-favorite {
@@ -493,15 +594,37 @@ body {
   background-color: #82B3D3;
   color: #FFFFFF;
   border: none;
+  width: 150px;
 }
 
 /* пагинация */
 
-.pagination-list {
+/* Верстка элементов пагинатора */
+.paginator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin: 0;
+  padding: 0 71px;
+}
+
+.pagination-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  width: 370px;
   padding: 0;
   list-style: none;
 }
+
+.hotel-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 390px;
+}
+
+/* оформление элементов пагинатора */
 
 .pagination-item {
   font-weight: 700;
@@ -529,4 +652,5 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  width: 160px;
 }
