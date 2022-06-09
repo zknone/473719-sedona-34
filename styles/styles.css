@@ -142,7 +142,7 @@ body {
 /* первый блок с заходной страницей */
 
 .intro-image {
-  background: url("../images/index-background.jpg") center no-repeat #000000;
+  background: url("../images/index-background.jpg") center no-repeat #433c3c;
   color: #FFFFFF;
 }
 
