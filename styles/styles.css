@@ -140,6 +140,8 @@ body {
 }
 
 .navigation-list {
+  display: flex;
+  flex-direction: row;
   width: 520px;
   margin: 0;
   padding: 0;
@@ -442,7 +444,7 @@ body {
   width: 1060px;
   display: flex;
   margin: 0 auto;
-  padding:0 70px;
+  padding: 0 70px;
   flex-direction: row;
   font-size: 18px;
   line-height: 21px;
@@ -542,25 +544,31 @@ body {
 }
 
 .way-to-demonstrate-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   margin: 0;
   padding: 0;
   list-style: none;
   width: 160px;
+  height: 50px;
+}
+
+.way-to-demonstrate-item {
+  width: 48px;
+  height: 48px;
 }
 
 .way-to-demonstrate-item-table {
-  background: url("../images/icon-table.svg") center no-repeat #000000;
-  color: #FFFFFF;
+  background: url("../images/icon-table.svg") center no-repeat;
 }
 
 .way-to-demonstrate-item-slideshow {
-  background: url("../images/icon-slideshow.svg") center no-repeat #000000;
-  color: #FFFFFF;
+  background: url("../images/icon-slideshow.svg") center no-repeat;
 }
 
 .way-to-demonstrate-item-listing {
-  background: url("../images/icon-listing.svg") center no-repeat #000000;
-  color: #FFFFFF;
+  background: url("../images/icon-listing.svg") center no-repeat;
 }
 
 /* Карточки */
@@ -570,6 +578,7 @@ body {
   width: 1057px;
   margin: 0 auto;
 }
+
 /* ставит три карточки в ряд */
 .product-list {
   display: flex;
@@ -580,6 +589,7 @@ body {
   list-style: none;
   padding-inline-start: 0;
 }
+
 /* ровно просчитывает размер карточки */
 
 .product-card {
@@ -652,7 +662,7 @@ body {
   color: #FFFFFF;
   border: none;
   width: 150px;
-  margin: 0;  
+  margin: 0;
 }
 
 /* пагинация */
