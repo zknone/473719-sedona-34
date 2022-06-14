@@ -35,7 +35,6 @@ html {
 }
 
 body {
-  margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -45,6 +44,7 @@ body {
   text-align: center;
   background-color: rgba(242, 242, 242, 1);
   color: #333333;
+  margin: 0;
 }
 
 .main-container {
@@ -57,7 +57,6 @@ body {
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
 }
-
 
 .visually-hidden {
   position: absolute;
@@ -79,6 +78,8 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #756157;
+  border-radius: 4px;
+  padding: 12px
 }
 
 .button-alternative {
@@ -95,53 +96,16 @@ body {
 
 /* навигация */
 
-.logo-nav {
-  display: block;
-}
-
 .navigation {
   display: flex;
-  margin: 0 auto;
-}
-
-.navigation-link {
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 700;
-  text-align: left;
-  text-decoration: none;
-  color: #000000;
-}
-
-.navigation-item-search {
-  background: url("../images/search-icon.svg") center no-repeat #FFFFFF;
-  color: #000000;
-  width: 18px;
-  height: 18px;
-
-}
-
-.navigation-item-saved {
-  background: url("../images/icon-favorite.svg") center no-repeat #FFFFFF;
-  color: #000000;
-  width: 18px;
-  height: 18px;
-}
-
-.navigation-button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #756157;
+  flex-direction: row;
+  padding: 0 70px;
 }
 
 .navigation-list {
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 520px;
   margin: 0;
   padding: 0;
@@ -151,11 +115,62 @@ body {
 .navigation-user-list {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
   width: 300px;
-  margin: 0;
   padding: 0;
+  margin: 0;
   list-style: none;
-  margin-left: auto;
+  flex-grow: 1;
+}
+
+.logo-nav {
+  display: block;
+  margin-right: 30px;
+}
+
+.navigation-link {
+  display: block;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+  color: #000000;
+  padding: 0 17px;
+}
+
+.navigation-item-search {
+  display: block;
+  background: url("../images/search-icon.svg") center no-repeat #FFFFFF;
+  color: #000000;
+  width: 18px;
+  height: 18px;
+  padding: 0 12px;
+}
+
+.navigation-item-saved {
+  display: block;
+  background: url("../images/icon-favorite.svg") center no-repeat #FFFFFF;
+  color: #000000;
+  width: 18px;
+  height: 18px;
+  padding: 0 12px;
+}
+
+.navigation-button {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756157;
+  padding: 9px 15px;
+  border-radius: 4px;
+  margin-left: 20px;
 }
 
 /* первый блок с заходной страницей */
@@ -165,33 +180,46 @@ body {
   flex-direction: column;
   background: url("../images/index-background.jpg") center no-repeat #433c3c;
   color: #FFFFFF;
-  height: 485px;
+  height: 484px;
 }
 
 .index-typography-illustration {
-  margin: 51px 372px 0;
+  display: block;
+  align-self: center;
+  margin-top: 51px;
 }
 
 .intro-image-divider {
-  margin-top: 26px;
+  display: block;
+  margin-top: auto;
 }
 
 /* Второй блок со слоганом Седоны */
 
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 63px;
+  padding-bottom: 90px;
+}
+
 .main-slogan {
-  padding: 0 290px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
   background-color: #FFFFFF;
   margin: 0;
+  width: 620px;
 }
 
 .main-slogan-description {
-  padding: 0 273px;
   font-size: 22px;
   line-height: 26px;
+  width: 654px;
+  margin: 0;
+  margin-top: 31px;
 }
 
 /* Блок с преимуществами и причинами посетить Седону */
@@ -200,6 +228,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  flex-grow: 1;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -232,7 +261,6 @@ body {
 .to-do-list {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   flex-grow: 1;
   color: #333333;
   background-color: #FFFFFF;
@@ -242,23 +270,33 @@ body {
 }
 
 .to-do-item {
-  padding: 0 85px;
-  width: 230px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 182px 0 81px;
+
 }
 
 .to-do-house {
-  background: url("../images/reason-1.svg") no-repeat center rgba(131, 179, 211, 0.12);
+  background: url("../images/reason-1.svg") no-repeat center 80px rgba(131, 179, 211, 0.12);
   color: #333333;
 }
 
 .to-do-food {
-  background: url("../images/reason-2.svg") no-repeat center #FFFFFF;
+  background: url("../images/reason-2.svg") no-repeat center 80px #FFFFFF;
   color: #333333;
 }
 
 .to-do-souvenirs {
-  background: url("../images/reason-3.svg") no-repeat center rgba(131, 179, 211, 0.12);
+  background: url("../images/reason-3.svg") no-repeat center 80px rgba(131, 179, 211, 0.12);
   color: #333333;
+}
+
+.to-do-description {
+  align-self: center;
+  margin: 30px 0 0;
+  width: 230px;
 }
 
 /* Упаковывает одинокие преимущества в один элемент. Создает горизонтальный поток */
@@ -269,30 +307,17 @@ body {
   flex-grow: 1;
 }
 
-/* Упаковывает последний ряд преимуществ, направляет их горизонтально */
-/* .last-advantages-wrapper {
+.advantage-item {
+  background: rgba(131, 179, 211, 0.12);
+  padding: 92px 85px;
+  width: 230px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-grow: 1;
-} */
-
-.advantage-item-square {
-  background: rgba(131, 179, 211, 0.12);
-  padding: 0 85px;
-  width: 230px;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.advantage-item-road {
-  background: rgba(131, 179, 211, 0.2);
-  padding: 0 85px;
-  width: 230px;
-}
-
-.advantage-item-non-crowdy {
-  background: rgba(131, 179, 211, 0.12);
-  padding: 0 85px;
-  width: 230px;
+.advantages-text {
+  margin: 30px 0 0;
 }
 
 .advantage-image-right {
@@ -304,44 +329,61 @@ body {
 }
 
 /* Блок с поиском */
+.search-conversion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 91px 0 93px;
+}
 
 .search-conversion-header {
-  padding: 0 452px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
+  padding: 0;
 }
 
 .search-conversion-block {
-  padding: 0 304px;
   font-size: 22px;
   line-height: 26px;
+  width: 592px;
+  margin: 29px 0 0;
+}
+
+.search-conversion-button {
+  width: 550px;
+  margin-top: 56px;
 }
 
 /* Блок с подпиской */
 
 .subscription-block-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: url("../images/background-subscribe.jpg") center no-repeat #000000;
   color: #FFFFFF;
+  padding: 94px 0;
 }
 
 .subscription-header {
   font-size: 30px;
   line-height: 36px;
-  padding: 0 398px;
   margin: 0;
 }
 
 .subscrtion-block-text {
   font-size: 22px;
   line-height: 26px;
-  padding: 0 363px;
+  width: 475px;
+  margin: 29px 0 0;
 }
 
 .subscription-form {
-  padding: 0 200px;
   display: flex;
+  width: 800px;
+  margin-top: 46px;
 }
 
 .email-form-description {
@@ -349,7 +391,12 @@ body {
   line-height: 21px;
   color: #000000;
   background: #F2F2F2;
-  width: 600px;
+  width: 578px;
+  padding: 0 0 0 22px;
+  margin: 0;
+  background: #F2F2F2;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
 }
 
 .email-submit-button {
@@ -361,22 +408,22 @@ body {
   text-decoration: none;
   color: #FFFFFF;
   background: #82B3D3;
+  border-radius: 0px 10px 10px 0px;
   border: none;
   width: 200px;
+  padding: 12px 15px;
 }
 
 /* Футер */
 .page-footer-container {
   display: flex;
-  margin: 0 auto;
-  height: 120px;
   align-items: center;
+  padding: 45px 71px 35px 81px;
 }
 
 .footer-social {
   width: 120px;
   margin-right: auto;
-  padding: 0 72px;
   width: fit-content;
 }
 
@@ -384,16 +431,16 @@ body {
   width: 115px;
   display: block;
   margin-left: auto;
-  padding: 0 72px;
 }
 
 .footer-phone {
-  width: 720;
+  width: 331px;
 }
 
 .social-media-list {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -401,23 +448,23 @@ body {
 
 .vkontakte-icon {
   background: url("../images/social-logo-1.svg") center no-repeat #FFFFFF;
-  color: #000000;
   width: 20px;
   height: 17px;
+  margin-right: 27px;
 }
 
 .telegram-icon {
   background: url("../images/social-logo-2.svg") center no-repeat #FFFFFF;
-  color: #000000;
   width: 20px;
   height: 17px;
+  margin-right: 27px;
 }
 
 .youtube-icon {
   background: url("../images/social-logo-3.svg") center no-repeat #FFFFFF;
-  color: #000000;
   width: 20px;
   height: 17px;
+  margin-right: 27px;
 }
 
 .footer-phone-link {
@@ -554,20 +601,26 @@ body {
   height: 50px;
 }
 
-.way-to-demonstrate-item {
-  width: 48px;
-  height: 48px;
-}
+.way-to-demonstrate-item {}
 
 .way-to-demonstrate-item-table {
+  display: block;
+  width: 48px;
+  height: 48px;
   background: url("../images/icon-table.svg") center no-repeat;
 }
 
 .way-to-demonstrate-item-slideshow {
+  display: block;
+  width: 48px;
+  height: 48px;
   background: url("../images/icon-slideshow.svg") center no-repeat;
 }
 
 .way-to-demonstrate-item-listing {
+  display: block;
+  width: 48px;
+  height: 48px;
   background: url("../images/icon-listing.svg") center no-repeat;
 }
 
