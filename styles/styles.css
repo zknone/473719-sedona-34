@@ -131,6 +131,14 @@ body {
   margin-right: 30px;
 }
 
+.navigation-item {
+  padding: 0 17px;
+}
+
+.navigation-item:last-child {
+  padding-right: 0;
+}
+
 .navigation-link {
   display: block;
   font-size: 20px;
@@ -139,7 +147,6 @@ body {
   text-align: left;
   text-decoration: none;
   color: #000000;
-  padding: 0 17px;
 }
 
 .navigation-item-search {
@@ -183,17 +190,18 @@ body {
   background: url("../images/index-background.jpg") center no-repeat #433c3c;
   color: #FFFFFF;
   height: 484px;
+  padding-top: 51px;
+  box-sizing: border-box;
 }
 
 .index-typography-illustration {
   display: block;
   align-self: center;
-  margin-top: 51px;
+  margin-bottom: 25px;
 }
 
 .intro-image-divider {
   display: block;
-  margin-top: auto;
 }
 
 /* Второй блок со слоганом Седоны */
@@ -212,7 +220,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   background-color: #FFFFFF;
-  margin: 0;
+  margin: 0 0 31px;
   width: 620px;
 }
 
@@ -221,7 +229,6 @@ body {
   line-height: 26px;
   width: 654px;
   margin: 0;
-  margin-top: 31px;
 }
 
 /* Блок с преимуществами и причинами посетить Седону */
@@ -241,7 +248,7 @@ body {
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 30px;
 }
 
 .advantage-item-wrapper {
@@ -297,7 +304,7 @@ body {
 
 .to-do-description {
   align-self: center;
-  margin: 30px 0 0;
+  margin: 0;
   width: 230px;
 }
 
@@ -319,7 +326,11 @@ body {
 }
 
 .advantages-text {
-  margin: 30px 0 0;
+  margin: 0 0 30px;
+}
+
+.advantages-text:last-child {
+  margin: 0;
 }
 
 .advantage-image-right {
@@ -342,20 +353,19 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0;
+  margin: 0 0 29px;
 }
 
 .search-conversion-block {
   font-size: 22px;
   line-height: 26px;
   width: 592px;
-  margin: 29px 0 0;
+  margin: 0 0 56px;
+
 }
 
 .search-conversion-button {
   width: 550px;
-  margin-top: 56px;
 }
 
 /* Блок с подпиской */
@@ -372,20 +382,19 @@ body {
 .subscription-header {
   font-size: 30px;
   line-height: 36px;
-  margin: 0;
+  margin: 0 0 29px;
 }
 
 .subscrtion-block-text {
   font-size: 22px;
   line-height: 26px;
   width: 475px;
-  margin: 29px 0 0;
+  margin: 0 0 46px;
 }
 
 .subscription-form {
   display: flex;
   width: 800px;
-  margin-top: 46px;
 }
 
 .email-form-description {
@@ -448,6 +457,10 @@ body {
   list-style: none;
 }
 
+.social-media-item:last-child {
+  margin-right: 0;
+}
+
 .vkontakte-icon {
   background: url("../images/social-logo-1.svg") center no-repeat #FFFFFF;
   width: 20px;
@@ -483,16 +496,12 @@ body {
 /* работа с каталогом */
 /* делаем фильтр */
 /* настройка потока для фильтров */
-.filter-block-wrapper {
-  margin: 0 auto;
+.hotels-filter {
   display: flex;
   flex-direction: column;
-  padding: 35px 70px
-  /* height: 393px; */
-}
-
-.filter-background-image {
   background: url("../images/background-filter.jpg") center no-repeat #423c3c;
+  padding: 35px 70px 70px;
+  box-sizing: border-box;
 }
 
 .catalog-filter {
@@ -550,18 +559,15 @@ body {
   list-style: none;
 }
 
-.breadcrumbs-item {
+.breadcrumbs-link {
   display: block;
-  align-items: baseline;
 }
 
 .breadcrumbs-home {
   display: block;
   background: url("../images/icon-go-home.svg") center no-repeat;
-  fill: #FFFFFF;
-  width: 12px;
-  height: 12px;
-  margin-left: 14px;
+  width: 26px;
+  height: 21px;
 }
 
 .catalog-filter-title {
@@ -572,7 +578,7 @@ body {
   margin: 0 0 30px;
 }
 
-.control-input{
+.control-input {
   padding: 0;
   margin: 0 0 15px;
 }
@@ -621,8 +627,6 @@ body {
   width: 160px;
   height: 50px;
 }
-
-.way-to-demonstrate-item {}
 
 .way-to-demonstrate-item-table {
   display: block;
@@ -795,4 +799,11 @@ body {
   line-height: 21px;
   color: #333333;
   width: 160px;
+}
+
+.subscription-block-catalogue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 94px 0;
 }
