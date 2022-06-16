@@ -583,18 +583,22 @@ body {
   margin: 0 0 15px;
 }
 
+.filter-button {
+  margin-bottom: 20px;
+}
+
 .reset-button {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
   text-decoration: none;
-  margin-top: 20px;
 }
+  
 
 /* верстка блоков представления карточек, сортировки, информации о колиечтсве выведенных позиций */
 .filter-tab {
   display: flex;
-  padding: 0 71px;
+  padding: 60px 72px;
   justify-content: space-between;
 }
 
@@ -609,12 +613,16 @@ body {
 }
 
 .filter-select {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
   width: 287px;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  padding-left: 191px;
-  padding-right: 81px;
+  margin-right: auto;
+  margin-left: 191px;
+  padding: 14px 100px 14px 20px;
 }
 
 .way-to-demonstrate-list {
@@ -662,7 +670,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
+  margin: 0 0 66px;
   padding-right: 0;
   list-style: none;
   padding-inline-start: 0;
@@ -678,6 +686,10 @@ body {
   flex-wrap: wrap;
 }
 
+.product-image{
+  margin: 0 0 16px;
+}
+
 .product-card-link {
   font-weight: 700;
   font-size: 24px;
@@ -691,19 +703,21 @@ body {
   color: #333333;
   width: 150px;
   text-align: left;
-  margin: 0;
+  margin: 0 0 16px;
 }
 
 .product-price {
   color: #333333;
-  width: 150px;
+  width: 137px;
   text-align: left;
-  margin: 0;
+  margin: 0 0 16px 13px;
+
 }
 
 .product-card-title {
   width: 300px;
   text-align: left;
+  margin: 0 0 16px;
 }
 
 .rating-caption {
@@ -713,7 +727,10 @@ body {
   text-transform: uppercase;
   width: 150;
   text-align: left;
-  margin: 0;
+  margin: 0 0 0 auto;
+  background: #F2F2F2;
+  border-radius: 4px;
+  padding: 8px 22px;
 }
 
 .button-about {
@@ -724,8 +741,10 @@ body {
   text-decoration: none;
   background-color: #756157;
   color: #FFFFFF;
-  width: 150px;
-  margin: 0;
+  width: 110px;
+  margin: 0 auto 16px 0;
+  border-radius: 4px;
+  padding: 9px 15px 8px 9px;
 }
 
 .button-favorite {
@@ -739,8 +758,10 @@ body {
   background-color: #82B3D3;
   color: #FFFFFF;
   border: none;
-  width: 150px;
-  margin: 0;
+  width: 140px;
+  margin: 0 0 16px auto;
+  border-radius: 4px;
+  padding: 9px 15px 8px 9px;
 }
 
 /* пагинация */
@@ -751,15 +772,16 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin: 0;
-  padding: 0 71px;
+  padding: 30px 71px 25px 73px;
 }
 
 .pagination-list {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: 0;
-  width: 370px;
   padding: 0;
+  width: 400px;
   list-style: none;
 }
 
@@ -776,14 +798,22 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-decoration: none;
-  text-transform: uppercase;
   text-align: center;
 }
 
 .pagination-link {
+  display: block;
   color: #FFFFFF;
   background: #82B3D3;
+  border: 1px solid #82B3D3;
+  border-radius: 4px; 
+  padding: 12px 24px 12px 24px;
+  margin-right: 8px;
+  text-decoration: none;
+}
+
+.pagination-link:last-child {
+  margin-right: 0px;
 }
 
 .pagination-current {
@@ -799,6 +829,20 @@ body {
   line-height: 21px;
   color: #333333;
   width: 160px;
+}
+
+.hotel-number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantity-hotels {
+  display: block;
+}
+
+.quantity-select {
+  padding: 14px 100px 14px 20px;
 }
 
 .subscription-block-catalogue {
