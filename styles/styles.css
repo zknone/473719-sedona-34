@@ -45,6 +45,7 @@ body {
   background-color: rgba(242, 242, 242, 1);
   color: #333333;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .main-container {
@@ -635,9 +636,8 @@ body {
 .way-to-demonstrate-list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-direction: row;
-  margin: 0;
+  margin: auto 0;
   padding: 0;
   list-style: none;
   width: 160px;
@@ -648,7 +648,9 @@ body {
   display: block;
   width: 48px;
   height: 48px;
+  border-style: solid 4px;
   background: url("../images/icon-table.svg") center no-repeat;
+  box-sizing: border-box;
 }
 
 .way-to-demonstrate-item-slideshow {
@@ -656,6 +658,7 @@ body {
   width: 48px;
   height: 48px;
   background: url("../images/icon-slideshow.svg") center no-repeat;
+  box-sizing: border-box;
 }
 
 .way-to-demonstrate-item-listing {
@@ -663,6 +666,7 @@ body {
   width: 48px;
   height: 48px;
   background: url("../images/icon-listing.svg") center no-repeat;
+  box-sizing: border-box;
 }
 
 /* Карточки */
