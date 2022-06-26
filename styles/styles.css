@@ -35,9 +35,11 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
-} 
+}
 
 body {
   display: flex;
@@ -152,6 +154,8 @@ body {
   text-align: left;
   text-decoration: none;
   color: #000000;
+  width: auto;
+  height: auto;
 }
 
 .navigation-item-search {
@@ -196,7 +200,6 @@ body {
   color: #FFFFFF;
   height: 484px;
   padding-top: 51px;
-  box-sizing: border-box;
 }
 
 .index-typography-illustration {
@@ -246,7 +249,6 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  box-sizing: border-box;
 }
 
 .block-title {
@@ -259,7 +261,7 @@ body {
 
 .advantage-item-wrapper {
   padding: 92px 85px;
-  width: 230px;
+  width: 400px;
 }
 
 .standalone-left {
@@ -286,7 +288,6 @@ body {
 
 .to-do-item {
   width: 33.333%;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -327,7 +328,6 @@ body {
   background: rgba(131, 179, 211, 0.12);
   padding: 92px 85px;
   width: 33.333%;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -512,7 +512,6 @@ body {
   flex-direction: column;
   background: url("../images/background-filter.jpg") center no-repeat #423c3c;
   padding: 35px 70px 70px;
-  box-sizing: border-box;
 }
 
 .catalog-filter {
@@ -681,7 +680,7 @@ body {
 /* ставит три карточки в ряд */
 .product-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 340px 340px 340px;
   gap: 18px;
   margin: 0 0 66px;
   padding-right: 0;
@@ -692,26 +691,29 @@ body {
 /* ровно просчитывает размер карточки */
 
 .product-card {
-  width: 300px;
-  padding: 20px;
+  width: 340px;
   display: grid;
+  padding: 20px;
   grid-template-columns: 150px 150px;
   grid-template-rows: 212px auto auto auto;
   row-gap: 16px;
 }
 
 .card-image {
+  display: block;
   grid-column: 1/ -1;
   object-fit: contain;
 }
 
 .product-card-title {
+  display: block;
   text-align: left;
   margin: 0;
   grid-column: 1/ -1;
 }
 
 .product-card-link {
+  display: block;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -720,18 +722,21 @@ body {
 }
 
 .product-type {
+  display: block;
   color: #333333;
   text-align: left;
   margin: 0 10px 0 0;
 }
 
 .product-price {
+  display: block;
   color: #333333;
   text-align: left;
   margin: 0 0 0 10px;
 }
 
 .rating-caption {
+  display: block;
   font-size: 16px;
   line-height: 20px;
   color: #333333;
@@ -745,6 +750,7 @@ body {
 }
 
 .button-about {
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -758,6 +764,7 @@ body {
 }
 
 .button-favorite {
+  display: block;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
