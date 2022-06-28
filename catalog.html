@@ -36,7 +36,7 @@
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-conversion-item">
             <a class="navigation-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
@@ -54,7 +54,7 @@
             <a class="breadcrumbs-home" href="./index.html">
               <svg class="icon" width="12" height="12">
                 <use xlink:href="images/sprite.svg#icon-go-home"></use>
-               </svg>
+              </svg>
               <span class="visually-hidden">>На главную</span>
             </a>
           </li>
@@ -112,17 +112,26 @@
         </select>
         <ul class="way-to-demonstrate-list">
           <li class="way-to-demonstrate-item">
-            <a class="way-to-demonstrate-item-table" href="#">
+            <a class="way-to-demonstrate-mode" href="#">
               <span class="visually-hidden">Показать карточки</span>
+              <svg class="icon" width="16" height="14">
+                <use xlink:href="images/sprite.svg#icon-table"></use>
+              </svg>
             </a>
           </li>
           <li class="way-to-demonstrate-item">
-            <a class="way-to-demonstrate-item-slideshow" href="#">
+            <a class="way-to-demonstrate-mode" href="#">
+              <svg class="icon" width="16" height="14">
+                <use xlink:href="images/sprite.svg#icon-slideshow"></use>
+              </svg>
               <span class="visually-hidden">Показать в галерее</span>
             </a>
           </li>
           <li class="way-to-demonstrate-item">
-            <a class="way-to-demonstrate-item-listing" href="#">
+            <a class="way-to-demonstrate-mode" href="#">
+              <svg class="icon" width="16" height="14">
+                <use xlink:href="images/sprite.svg#icon-list"></use>
+              </svg>
               <span class="visually-hidden">Показать список</span>
             </a>
           </li>
@@ -144,6 +153,7 @@
             <a class="button-about" href="#">подробнее</a>
             <button class="button-favorite" type="button">в избранное</button>
             <span class="visually-hidden">Отель четыре звезды</span>
+            <span class="stars-quantity four-star-class"></span>
             <p class="rating-caption">Рейтинг: 8,5</p>
           </li>
 
@@ -159,6 +169,7 @@
             <p class="product-price">От 5000 ₽</p>
             <a class="button-about" href="#">подробнее</a>
             <button class="button-favorite" type="button">в избранное</button>
+            <span class="stars-quantity four-star-class"></span>
             <span class="visually-hidden">Отель четыре звезды</span>
             <p class="rating-caption">Рейтинг: 9,2</p>
           </li>
@@ -176,6 +187,7 @@
             <a class="button-about" href="#">подробнее</a>
             <button class="button-favorite" type="button">в избранное</button>
             <span class="visually-hidden">Отель три звезды</span>
+            <span class="stars-quantity three-star-class"></span>
             <p class="rating-caption">Рейтинг: 6,9</p>
           </li>
 
@@ -192,6 +204,7 @@
             <a class="button-about" href="#">подробнее</a>
             <button class="button-favorite" type="button">в избранное</button>
             <span class="visually-hidden">Отель две звезды</span>
+            <span class="stars-quantity two-star-class"></span>
             <p class="rating-caption">Рейтинг: 5,0</p>
           </li>
         </ul>
@@ -276,9 +289,10 @@
         </section>
         <section class="footer-logo">
           <h2 class="visually-hidden">Сайт создан HTML-academy</h2>
-          <a href="https://htmlacademy.ru/">
-            <img class="made-by-htmlacademy" src="images/html-academy-logo.svg" width="114.9" height="32.9"
-              alt="Сделано HthmlAcademy.">
+          <a class="footer-logo-link" href="https://htmlacademy.ru/">
+            <svg class="icon" width="115" height="33">
+              <use xlink:href="images/sprite.svg#html-academy-logo"></use>
+            </svg>
           </a>
         </section>
       </div>

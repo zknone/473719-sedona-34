@@ -216,7 +216,7 @@ body {
   color: #000000;
   width: 18px;
   height: 18px;
-  padding: 0 12px;
+  margin: 0 12px;
 }
 
 .navigation-item-saved {
@@ -225,7 +225,7 @@ body {
   color: #000000;
   width: 18px;
   height: 18px;
-  padding: 0 12px;
+  margin: 0 12px;
 }
 
 .navigation-button {
@@ -263,6 +263,7 @@ body {
 /* первый блок с заходной страницей */
 
 .intro-image {
+  position: relative;
   display: flex;
   flex-direction: column;
   background: url("../images/index-background.jpg") center no-repeat #433c3c;
@@ -271,6 +272,14 @@ body {
   padding-top: 51px;
 }
 
+.intro-image::before {
+  position: absolute;
+  content: url("../images/divider.svg");
+  width: fit-content;
+  top: 100%;
+  transform: translateY(-57px);
+}
+ 
 .index-typography-illustration {
   display: block;
   align-self: center;
@@ -543,6 +552,22 @@ body {
   margin-left: auto;
 }
 
+.footer-logo-link {
+  color: #000000;
+}
+
+.footer-logo-link:hover {
+  color: #756157
+}
+
+.social-media-link:focus {
+  color: #756157;
+}
+
+.social-media-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .footer-phone {
   width: 331px;
 }
@@ -573,7 +598,22 @@ body {
   width: 25px;
   height: 25px;
   color: #83B3D3;
+}
 
+.social-media-link:hover {
+  color: #68A2CA;
+}
+
+.social-media-link:focus {
+  color: #68A2CA;
+}
+
+.social-media-link:active {
+  color: rgba(104, 162, 202, 0.3);
+}
+
+.social-media-link:disabled {
+  color: #E5E5E5;
 }
 
 .footer-phone-link {
@@ -585,6 +625,22 @@ body {
   text-decoration: none;
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.footer-phone-link:hover {
+  color: #756157;
+}
+
+.footer-phone-link:focus {
+  color: #756157;
+}
+
+.footer-phone-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-phone-link:disabled {
+  color: #E5E5E5;
 }
 
 /* работа с каталогом */
@@ -655,12 +711,14 @@ body {
 
 .breadcrumbs-item {
   position: relative;
-  padding-left: 25px;
+  padding-right: 15px;
+  margin-right: 10px;
+  color:rgba(242, 242, 242, 1);
 }
 
-.breadcrumbs-link {
+/* .breadcrumbs-link {
   text-decoration: none;
-}
+} */
 
 .breadcrumbs-home {
   width: 12px;
@@ -670,17 +728,36 @@ body {
 
 .breadcrumbs-item::after {
   position: absolute;
-  content: url("/images/icon-arrow.svg");
-  padding-left: 10px;
+  content: "";
+  display:block;
   height: 8px;
+  width: 6px;
+  right: 0;
+  top:50%;
+  transform: translateY(-50%);
+  background-image: url("../images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
   color:rgba(242, 242, 242, 1);
 }
 
-.breadcrumbs-item:first-child{
-  padding-left: 0;
+.breadcrumbs-home:hover {
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.breadcrumbs-item::after:last-of-type {
+.breadcrumbs-home:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-item:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-item:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-item:last-of-type::after {
   display: none;
 }
 
@@ -751,27 +828,22 @@ body {
   height: 50px;
 }
 
-.way-to-demonstrate-item-table {
+.way-to-demonstrate-item {
   display: block;
-  width: 48px;
-  height: 48px;
-  border-style: solid 4px;
-  background: url("../images/icon-table.svg") center no-repeat;
+  border: 2px solid #FFFFFF;
 }
 
-.way-to-demonstrate-item-slideshow {
+.way-to-demonstrate-mode{
   display: block;
-  width: 48px;
-  height: 48px;
-  background: url("../images/icon-slideshow.svg") center no-repeat;
+  color: #000000;
+  padding: 14px 16px;
 }
 
-.way-to-demonstrate-item-listing {
-  display: block;
-  width: 48px;
-  height: 48px;
-  background: url("../images/icon-listing.svg") center no-repeat;
+.way-to-demonstrate-item:hover {
+  border-color: #000000;
 }
+
+
 
 /* Карточки */
 
@@ -837,6 +909,32 @@ body {
   color: #333333;
   text-align: left;
   margin: 0 0 0 10px;
+}
+
+.stars-quantity {
+  background: url("../images/icon-star-active.svg") space; 
+  padding: 9px 2px;
+  background-origin: content-box;
+}
+
+.one-star-class {
+  width: 22px;
+}
+
+.two-star-class {
+  width: 44px;
+}
+
+.three-star-class {
+  width: 66px;
+}
+
+.four-star-class {
+  width: 88px;
+}
+
+.five-star-class {
+  width: 110px;
 }
 
 .rating-caption {
