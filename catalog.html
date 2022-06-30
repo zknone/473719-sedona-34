@@ -21,8 +21,8 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-curent" href="catalog.html">Гостиница</a>
+          <li class="navigation-item navigation-item-current">
+            <a class="navigation-link" href="catalog.html">Гостиница</a>
           </li>
         </ul>
         <ul class="navigation-user-list">
@@ -36,7 +36,7 @@
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-          <li class="navigation-conversion-item">
+          <li class="navigation-item">
             <a class="navigation-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
@@ -65,35 +65,58 @@
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <div class="filter-wrapper">
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-fliter-infrastructure">
               <legend class="catalog-filter-title">Инфраструктуры</legend>
-              <label class="control">
+              <label class="control-element">
                 <input class="control-input" type="checkbox" name="pools-on">
                 Басейны
-              </label><br>
-              <label class="control">
+              </label>
+              <label class="control-element">
                 <input class="control-input" type="checkbox" name="parking-on">
                 Парковка
-              </label><br>
-              <label class="control">
+              </label>
+              <label class="control-element">
                 <input class="control-input" type="checkbox" name="wifi-on">
                 Wi-fi
-              </label><br>
+              </label>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-fliter-house-type">
               <legend class="catalog-filter-title">Тип жилья</legend>
-              <label class="control">
+              <label class="control-element">
                 <input class="control-input" type="radio" name="places" value="hotels-on">
                 Гостиницы
-              </label><br>
-              <label class="control">
+              </label>
+              <label class="control-element">
                 <input class="control-input" type="radio" name="places" value="motels-on">
                 Мотели
-              </label><br>
-              <label class="control">
+              </label>
+              <label class="control-element">
                 <input class="control-input" type="radio" name="places" value="appartements-on">
                 Аппартаменты
-              </label><br>
+              </label>
+            </fieldset>
+            <fieldset class="catalog-filter-group catalog-filter-price">
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <div class="price-range-input"><label class="control">
+                  <input class="range-input-min" type="number" value="0" name="price-min">
+                  От
+                </label>
+                <label class="control-price">
+                  <input class="range-input-max" type="number" value="9000" name="prince-max">
+                  До
+                </label>
+              </div>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="width: 227px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </div>
+                </div>
+
             </fieldset>
           </div>
           <div class="filter-button-wrapper">
