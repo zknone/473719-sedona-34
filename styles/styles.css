@@ -761,46 +761,83 @@ body {
   background-color: #FFFFFF;
 }
 
-.range-togle {
+.range-toggle {
   position: absolute;
   background: #FFFFFF;
   border-radius: 5px;
+  border: 0;
   width: 20px;
-  height: 20px
+  height: 20px;
+  margin: 0;
+  padding:0;
+  cursor: pointer;
 }
 
-.range-input-min {
-  width: 140px;
-  border: 2px solid #FFFFFF;
-  border-radius: 4px 0 0 4px;
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  padding: 14px 0 13px 17px;
-  background-color: transparent;
-  color: #ffffff;
-  margin-bottom: 32px;
+.toggle-min {
+  top:-9px;
 }
 
-.range-input-max {
-  width: 140px;
-  border: 2px solid #FFFFFF;
-  border-radius: 0 4px 4px 0;
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  padding: 14px 0 13px 17px;
-  background-color: transparent;
-  color: #ffffff;
-  margin-bottom: 32px;
+.toggle-max {
+  top:-9px;
+  left: 227px;
 }
 
 .price-range-input {
+  position: relative;
   display: flex;
+  width: 280px;
+  margin-bottom: 32px;
+  justify-content: space-between;
+}
+
+.price-range-input::after {
+  position: absolute;
+  content: "";
+  width: 287px;
+  height: 48px;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  left: 0;
+  top: 0;
+}
+
+.price-range-input::before {
+  position: absolute;
+  content: "";
+  border: 1px solid #FFFFFF;
+  height: 48px;
+  left: 50%;
+  top: 0;
+}
+
+.range-input-labels {
+  display: block;
+  padding: auto 17px;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 14px 0;
+}
+
+.range-input-min {
+  width: 100px;
+  border: 0;
+  font: inherit;
+  color: #FFFFFF;
+  background-color: transparent;
+  padding-left: 18px;
+}
+
+.range-input-max {
+  width: 100px;
+  font: inherit;
+  color: #FFFFFF;
+  border: 0;
+  background-color: transparent;
+  padding-left: 18px;
 }
 
 .filter-button-wrapper {
