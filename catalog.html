@@ -40,7 +40,6 @@
             <a class="navigation-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
-
       </nav>
     </header>
     <main class="catalog-page main-container">
@@ -65,34 +64,51 @@
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <div class="filter-wrapper">
-            <fieldset class="catalog-filter-group catalog-fliter-infrastructure">
+            <fieldset class="catalog-filter-group catalog-filter-infrastructure">
               <legend class="catalog-filter-title">Инфраструктуры</legend>
               <label class="control-element">
-                <input class="control-input" type="checkbox" name="pools-on">
-                Басейны
+                <input class="visually-hidden control-input" type="checkbox" name="pools-on">
+                <span class="control-mark"></span>
+                <span class="control-label">
+                  Басейны
+                </span>
               </label>
               <label class="control-element">
-                <input class="control-input" type="checkbox" name="parking-on">
-                Парковка
+                <input class="visually-hidden control-input" type="checkbox" name="parking-on">
+                <span class="control-mark"></span>
+                <span class="control-label">
+                  Парковка
+                </span>
               </label>
               <label class="control-element">
-                <input class="control-input" type="checkbox" name="wifi-on">
-                Wi-fi
+                <input class="visually-hidden control-input" type="checkbox" name="wifi-on">
+                <span class="control-mark"></span>
+                <span class="control-label">
+                  Wi-fi
+                </span>
               </label>
             </fieldset>
-            <fieldset class="catalog-filter-group catalog-fliter-house-type">
+            <fieldset class="catalog-filter-group catalog-filter-house-type">
               <legend class="catalog-filter-title">Тип жилья</legend>
               <label class="control-element">
-                <input class="control-input" type="radio" name="places" value="hotels-on">
-                Гостиницы
+                <input class="visually-hidden control-input" type="radio" name="places" value="hotels-on">
+                <span class="control-mark"></span>
+                <span class="control-label">
+                  Гостиницы
               </label>
               <label class="control-element">
-                <input class="control-input" type="radio" name="places" value="motels-on">
-                Мотели
+                <input class="visually-hidden control-input" type="radio" name="places" value="motels-on">
+                <span class="control-mark"></span>
+                <span class="control-label">
+                  Мотели
+                </span>
               </label>
               <label class="control-element">
-                <input class="control-input" type="radio" name="places" value="appartements-on">
-                Аппартаменты
+                <input class="visually-hidden control-input" type="radio" name="places" value="appartements-on">
+                <span class="control-mark"></span>
+                <span class="control-label">
+                  Аппартаменты
+                </span>
               </label>
             </fieldset>
             <fieldset class="catalog-filter-group catalog-filter-price">
@@ -100,11 +116,11 @@
               <div class="price-range-input">
                 <label class="range-input-labels">
                   <input class="range-input-min" type="number" value="0" name="price-min">
-                  от
+                  <span class="visually-hidden">от</span>
                 </label>
                 <label class="range-input-labels">
                   <input class="range-input-max" type="number" value="9000" name="prince-max">
-                  до
+                  <span class="visually-hidden">до</span>
                 </label>
               </div>
               <div class="range">
@@ -115,15 +131,15 @@
                     </button>
                     <button class="range-toggle toggle-max">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
                   </div>
                 </div>
-
+              </div>
             </fieldset>
-          </div>
-          <div class="filter-button-wrapper">
-            <button class="button-alternative filter-button" type="submit">Применить</button>
-            <a class="reset-button" href="catalog.html">Сбросить</a>
-          </div>
+            <div class="filter-button-wrapper">
+              <button class="button-alternative filter-button" type="submit">Применить</button>
+              <a class="reset-button" href="catalog.html">Сбросить</a>
+            </div>
         </form>
       </section>
       <section class="filter-tab">

@@ -40,7 +40,6 @@
               <a class="navigation-button" href="#">Хочу сюда!</a>
             </li>
           </ul>
-
         </nav>
       </header>
       <main class="main-container">
@@ -61,7 +60,6 @@
             <li class="advantage-item-long standalone-left">
               <div class="advantage-item-wrapper advantage-order">
                 <h3 class="block-title">Настоящий городок</h3>
-                <!-- <p class="advantages-text">— №1 —</p> -->
                 <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="advantage-img-right" src="images/hotel-sedona.jpg" width="800" height="384"
@@ -87,24 +85,20 @@
                 alt="Картинка с каньоном.">
               <div class="advantage-item-wrapper advantage-order">
                 <h3 class="block-title">Там есть мост дьявола</h3>
-                <!-- <p class="advantages-text">— №2 —</p> -->
                 <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
             <li class="advantage-item advantage-order advantage-item-square">
               <h3 class="block-title">Небольшая площадь</h3>
-              <!-- <p class="advantages-text">— №3 —</p> -->
               <p class="advantages-text">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="advantage-item advantage-order advantage-item-road">
               <h3 class="block-title">Красивая<br>
                 дорога</h3>
-              <!-- <p class="advantages-text">— №4 —</p> -->
               <p class="advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="advantage-item advantage-order advantage-item-non-crowdy">
               <h3 class="block-title">Мало<br> туристов</h3>
-              <!-- <p class="advantages-text">— №5 —</p> -->
               <p class="advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
           </ol>
@@ -172,6 +166,47 @@
           </section>
         </div>
       </footer>
+      <!-- Начинается модальное окно -->
+      <div class="search-modal">
+        <div class="modal-header-wrapper">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть окно</span>
+          </button>
+        </div>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+          <label class="modal-subtitle check-in-title" for="check-in-date">Дата заезда:</label>
+          <input class="modal-input check-in-input" type="text" name="check-in" id="check-in-date">
+          <label class="modal-subtitle check-out-title" for="check-out-date">Дата выезда:</label>
+          <input class="modal-input check-out-input" type="text" name="check-out" id="check-out-date">
+          <div class="modal-ages-wrapper">
+            <fieldset class="modal-counter">
+              <label class="modal-subtitle adult-title" for="adult-quantity">Взрослые:</label>
+              <input class="modal-input adult-input" type="number" name="adults" id="adult-quantity">
+              <button class="modal-toggle toggle-plus">
+                <span class="visually-hidden">Плюс один</span>
+              </button>
+              <button class="modal-toggle toggle-minus">
+                <span class="visually-hidden">Минус один</span>
+              </button>
+            </fieldset>
+            <fieldset class="modal-counter">
+              <label class="modal-subtitle children-title" for="children-quantity">Дети:</label>
+              <input class="modal-input children-input" type="number" name="childrens" id="children-quantity">
+              <button class="modal-toggle toggle-plus">
+                <span class="visually-hidden">Плюс один</span>
+              </button>
+              <button class="modal-toggle toggle-minus">
+                <span class="visually-hidden">Минус один</span>
+              </button>
+            </fieldset>
+          </div>
+          <button class="modal-search-button" type="submit">
+            Искать
+          </button>
+        </form>
+      </div>
+      <!-- заканчивается модальное окно -->
     </div>
   </body>
 
