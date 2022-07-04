@@ -37,7 +37,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-button" href="#">Хочу сюда!</a>
+              <a class="navigation-button open-modal-btn" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -108,7 +108,7 @@
           <p class="search-conversion-block">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения
             гостиниц в Седоне
           </p>
-          <a href="#" class="button-basic search-conversion-button">Поиск гостиницы в Седоне</a>
+          <a href="#" class="button-basic search-conversion-button open-modal-btn">Поиск гостиницы в Седоне</a>
         </section>
         <section class="subscription-block-main">
           <h2 class="subscription-header">Подпишитесь на рассылку</H2>
@@ -168,65 +168,68 @@
       </footer>
       <!-- Начинается модальное окно -->
       <div class="search-modal">
-        <div class="modal-header-wrapper">
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <button class="modal-close-button">
-            <span class="visually-hidden">Закрыть окно</span>
-          </button>
-        </div>
-        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
-          <label class="modal-subtitle check-in-title" for="check-in-date">Дата заезда:</label>
-          <input class="modal-input check-in-input" type="text" name="check-in" id="check-in-date"
-            value="27 апреля 2020">
-          <label class="modal-subtitle check-out-title" for="check-out-date">Дата выезда:</label>
-          <input class="modal-input check-out-input" type="text" name="check-out" id="check-out-date"
-            value="1 сентября 2021">
-          <div class="modal-ages-wrapper">
-            <fieldset class="modal-counter counter-adult">
-              <label class="modal-subtitle adult-title" for="adult-quantity">Взрослые:</label>
-              <div class="modal-counter-wrapper">
-                <input class="modal-input adult-input" type="number" name="adults" id="adult-quantity" value="2">
-                <button class="modal-toggle toggle-minus">
-                  <svg width="13" height="13" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="currentColor" />
-                  </svg>
-                  <span class="visually-hidden">Минус один</span>
-                </button>
-                <button class="modal-toggle toggle-plus">
-                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="currentColor" />
-                  </svg>
-                  <span class="visually-hidden">Плюс один</span>
-                </button>
-              </div>
-            </fieldset>
-            <fieldset class="modal-counter counter-children">
-              <label class="modal-subtitle children-title" for="children-quantity">Дети:</label>
-              <div class="modal-counter-wrapper">
-                <input class="modal-input children-input" type="number" name="childrens" id="children-quantity"
-                  value="1">
-                <button class="modal-toggle toggle-minus">
-                  <svg width="13" height="13" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="currentColor" />
-                  </svg>
-                  <span class="visually-hidden">Минус один</span>
-                </button>
-                <button class="modal-toggle toggle-plus">
-                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="currentColor" />
-                  </svg>
-                  <span class="visually-hidden">Плюс один</span>
-                </button>
-              </div>
-            </fieldset>
+        <div class="search-modal-wrapper">
+          <div class="modal-header-wrapper">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <button class="modal-close-button">
+              <span class="visually-hidden">Закрыть окно</span>
+            </button>
           </div>
-          <button class="modal-search-button" type="submit">
-            Найти
-          </button>
-        </form>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+            <label class="modal-subtitle check-in-title" for="check-in-date">Дата заезда:</label>
+            <input class="modal-input check-in-input" type="text" name="check-in" id="check-in-date"
+              value="27 апреля 2020">
+            <label class="modal-subtitle check-out-title" for="check-out-date">Дата выезда:</label>
+            <input class="modal-input check-out-input" type="text" name="check-out" id="check-out-date"
+              value="1 сентября 2021">
+            <div class="modal-ages-wrapper">
+              <fieldset class="modal-counter counter-adult">
+                <label class="modal-subtitle adult-title" for="adult-quantity">Взрослые:</label>
+                <div class="modal-counter-wrapper">
+                  <input class="modal-input adult-input" type="number" name="adults" id="adult-quantity" value="2">
+                  <button class="modal-toggle toggle-minus">
+                    <svg width="13" height="13" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="currentColor" />
+                    </svg>
+                    <span class="visually-hidden">Минус один</span>
+                  </button>
+                  <button class="modal-toggle toggle-plus">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="currentColor" />
+                    </svg>
+                    <span class="visually-hidden">Плюс один</span>
+                  </button>
+                </div>
+              </fieldset>
+              <fieldset class="modal-counter counter-children">
+                <label class="modal-subtitle children-title" for="children-quantity">Дети:</label>
+                <div class="modal-counter-wrapper">
+                  <input class="modal-input children-input" type="number" name="childrens" id="children-quantity"
+                    value="1">
+                  <button class="modal-toggle toggle-minus">
+                    <svg width="13" height="13" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 1L13 1V0L0 0Z" fill="currentColor" />
+                    </svg>
+                    <span class="visually-hidden">Минус один</span>
+                  </button>
+                  <button class="modal-toggle toggle-plus">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="currentColor" />
+                    </svg>
+                    <span class="visually-hidden">Плюс один</span>
+                  </button>
+                </div>
+              </fieldset>
+            </div>
+            <button class="modal-search-button" type="submit">
+              Найти
+            </button>
+          </form>
+        </div>
       </div>
       <!-- заканчивается модальное окно -->
     </div>
+    <script src="js/scripts.js"></script>
   </body>
 
   </html>
