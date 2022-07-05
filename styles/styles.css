@@ -510,6 +510,7 @@ body {
   height: 20px;
   padding: 3px;
   margin: 0;
+  outline: 0;
 }
 
 .modal-counter-wrapper {
@@ -522,7 +523,6 @@ body {
   left: 14px;
   transform: translateY(-50%);
   opacity: 0.3;
-  outline: 0;
 }
 
 .toggle-plus {
