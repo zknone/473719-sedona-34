@@ -404,10 +404,10 @@ body {
   font-size: 18px;
   line-height: 21px;
   background: #F2F2F2;
+  border: 2px solid transparent;
   border-radius: 4px;
   width: 420px;
-  height: 50px;
-  border: 0;
+  height: 50px; 
   padding: 14px 50px 14px 19px;
   background: url("../images/icon-calendar.svg") 386px 18px no-repeat rgba(126, 126, 126, 0.1);
 }
@@ -423,7 +423,6 @@ body {
   background-color: #E6E6E6;
   color: rgb(0, 0, 0, 0.6);
   outline: 3px solid #83B3D3;
-  border-radius: 4px;
 }
 
 .modal-input.check-in-input:active,
@@ -431,7 +430,6 @@ body {
   background-color: #FFFFFF;
   outline: 0;
   border: 2px solid #000000;
-  border-radius: 4px;
 }
 
 .modal-input.children-input,
@@ -1197,14 +1195,10 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.range-toggle:focus {
-  border: 3px solid #83B3D3;
+.range-toggle:focus,
+.range-toggle:active{
+  outline: 3px solid #83B3D3;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-}
-
-.range-toggle:active {
-  border: 2px solid #83B3D3;
-  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 .toggle-min {
@@ -1247,7 +1241,7 @@ body {
   padding: 12px 18px;
   border: 2px solid #FFFFFF;
   border-radius: 4px 0 0 4px;
-  border-right: 0;
+  border-right: 2px solid transparent;
   outline: none;
 }
 
@@ -1273,7 +1267,7 @@ body {
   padding: 12px 18px;
   border: 2px solid #FFFFFF;
   border-radius: 0 4px 4px 0;
-  border-left: 0;
+  border-left: 2px solid transparent;
   outline: none;
 }
 
@@ -1289,7 +1283,6 @@ body {
 .range-input-max:active {
   background: #756257;
   border: 2px solid #FFFFFF;
-  border-left: 0;
 }
 
 .filter-button-wrapper {
