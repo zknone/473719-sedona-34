@@ -170,6 +170,7 @@ body {
   -ms-flex-direction: row;
   flex-direction: row;
   padding: 0 70px;
+  min-height: 68px;
 }
 
 .navigation-list {
@@ -225,6 +226,9 @@ body {
 .navigation-item {
   position: relative;
   margin-right: 34px;
+  height: 68px;
+  padding-top: 20px;
+  padding-bottom: 20px
 }
  
 
@@ -255,7 +259,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -85%;
+  bottom: -1px;
   height: 2px;
   width: auto;
   background-color: #756257;
@@ -284,11 +288,11 @@ body {
   position: absolute;
   display: block;
   content: "12";
-  top: -7px;
+  top: 15px;
   right: -14px;
   width: 20px;
   height: 20px;
-  padding: 2.5px 0.47px 4.5px;
+  padding: 2px 1px 4.5px;
   font-size: 10px;
   line-height: 13px;
   font-weight: 400;
