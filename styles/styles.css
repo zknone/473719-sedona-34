@@ -362,7 +362,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 70px;
+  padding: 50px 70px;
   width: 715px;
   position: fixed;
   top: 50%;
@@ -432,6 +432,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -486,6 +487,29 @@ body {
   background: url("../images/icon-calendar.svg") 386px 18px no-repeat rgba(126, 126, 126, 0.1);
 }
 
+.check-in-warning {
+  position: absolute;
+  left: 155px;
+  top: 55px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(255, 87, 87, 1);
+}
+
+.check-out-warning {
+  position: absolute;
+  left: 155px;
+  top: 148px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
 .modal-input.check-in-input:hover,
 .modal-input.check-out-input:hover {
   background-color: #E6E6E6;
@@ -530,6 +554,8 @@ body {
 .modal-tooltip {
   position: relative;
   border: none;
+  left: -5px;
+  top: 1px;
   width: 25px;
   height: 25px;
   background-color: transparent;
@@ -542,6 +568,7 @@ body {
 .tooltip-text {
   position: absolute;
   left: -116px;
+  top: 40px;
   z-index: 2;
   width: 256px;
   min-height: 143px;
@@ -557,8 +584,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  text-align: left;
   display: none;
-  top: 35px;
 }
 
 .tooltip-text:after {
@@ -702,7 +729,7 @@ body {
 
 .modal-search-button {
   width: 575px;
-  height: 50px;
+  min-height: 60px;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1468,7 +1495,7 @@ body {
   justify-content: space-between;
 }
 
-.price-range-input::before {
+/* .price-range-input::before {
   position: absolute;
   content: "";
   width: 2px;
@@ -1479,21 +1506,37 @@ body {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-}
+} */
 
 .range-input-labels {
   position: relative;
 }
 
+.range-min-description {
+  position: absolute;
+  opacity: 0.3;
+  left: 110px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.range-max-description {
+  position: absolute;
+  opacity: 0.3;
+  left: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .range-input-min {
-  width: 142px;
+  width: 144px;
   font: inherit;
   color: #FFFFFF;
   background-color: transparent;
   padding: 12px 35px 12px 18px;
   border: 2px solid #FFFFFF;
   border-radius: 4px 0 0 4px;
-  border-right: 2px solid transparent;
+  /* border-right: 2px solid transparent; */
   outline: none;
 }
 
@@ -1513,14 +1556,16 @@ body {
 }
 
 .range-input-max {
-  width: 142px;
+  position: absolute;
+  width: 143px;
+  left: -144px;
   font: inherit;
   color: #FFFFFF;
   background-color: transparent;
   padding: 12px 35px 12px 16px;
   border: 2px solid #FFFFFF;
   border-radius: 0 4px 4px 0;
-  border-left: 2px solid transparent;
+  /* border-left: 2px solid transparent; */
   outline: none;
 }
 
