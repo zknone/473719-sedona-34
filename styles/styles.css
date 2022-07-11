@@ -1663,7 +1663,7 @@ body {
 }
 
 .breadcrumbs-home:focus {
-  outline: 3px solid #83B3D3;);
+  outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
@@ -1672,7 +1672,7 @@ body {
 }
 
 .breadcrumbs-item:focus {
-  outline: 3px solid #83B3D3;);
+  outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
