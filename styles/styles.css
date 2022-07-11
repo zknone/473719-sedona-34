@@ -220,8 +220,6 @@ body {
 .navigation-item {
   position: relative;
   margin-right: 34px;
-  padding-top: 19px;
-  padding-bottom: 19px
 }
 
 .navigation-modal-button {
@@ -243,12 +241,16 @@ body {
   width: auto;
   height: auto;
   position: relative;
+  padding-top: 19px;
+  padding-bottom: 19px
 }
 
 .navigation-item-search a,
 .navigation-item-saved a {
   width: 20px;
   height: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px
 }
 
 .navigation-item-current::before {
@@ -284,7 +286,7 @@ body {
   position: absolute;
   display: block;
   content: "12";
-  top: 15px;
+  top: 6px;
   right: -14px;
   width: 20px;
   height: 20px;
@@ -394,7 +396,7 @@ body {
 }
 
 .modal-title {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -453,7 +455,7 @@ body {
 }
 
 .modal-subtitle {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -474,7 +476,7 @@ body {
 .modal-input.check-in-input,
 .modal-input.check-out-input {
   position: relative;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -491,7 +493,7 @@ body {
   position: absolute;
   left: 155px;
   top: 55px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -503,7 +505,7 @@ body {
   position: absolute;
   left: 155px;
   top: 148px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -535,7 +537,7 @@ body {
   width: 133px;
   height: 50px;
   padding: 14px 40px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -579,7 +581,7 @@ body {
   -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -589,7 +591,7 @@ body {
 }
 
 .tooltip-text:after {
-  content: '';
+  content: "";
   background-image: url("../images/triangle-tooltip.svg");
   color: #333333;
   width: 19px;
@@ -627,8 +629,11 @@ body {
 .modal-input[type="number"]::-webkit-inner-spin-button,
 .modal-input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
-  -moz-appearance: none;
   margin: 0;
+}
+
+.modal-input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .modal-counter {
@@ -730,7 +735,7 @@ body {
 .modal-search-button {
   width: 575px;
   min-height: 60px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -996,7 +1001,7 @@ body {
 }
 
 .advantages-text::after {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1098,7 +1103,7 @@ body {
 }
 
 .email-form-description {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1194,6 +1199,8 @@ body {
 }
 
 .social-media-list {
+  position: relative;
+  left: -5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1216,7 +1223,7 @@ body {
 }
 
 .social-media-item {
-  margin-right: 23px;
+  margin-right: 13px;
 }
 
 .social-media-item:last-child {
@@ -1237,8 +1244,9 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
+  padding: auto 5px;
   color: #83B3D3;
   outline: 0;
 }
@@ -1363,7 +1371,7 @@ body {
 }
 
 .control-label {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1387,14 +1395,18 @@ body {
   background: rgba(255, 255, 255, 0.6);
 }
 
-.control-input:focus+.control-mark {
+.control-input:focus + .control-mark {
   background: rgba(255, 255, 255, 0.6);
   border: 0;
   outline: 3px solid #83B3D3;
 }
 
-.control-input:active+.control-mark {
-  background: rgba(255, 255, 255, 0.3);
+.control-input:active + .control-mark + .control-label {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.control-input:disabled + .control-mark {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .control-input[type="checkbox"]:checked+.control-mark::after {
@@ -1495,19 +1507,6 @@ body {
   justify-content: space-between;
 }
 
-/* .price-range-input::before {
-  position: absolute;
-  content: "";
-  width: 2px;
-  border: 0;
-  background-color: #FFFFFF;
-  height: 49px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-} */
-
 .range-input-labels {
   position: relative;
 }
@@ -1536,7 +1535,6 @@ body {
   padding: 12px 35px 12px 18px;
   border: 2px solid #FFFFFF;
   border-radius: 4px 0 0 4px;
-  /* border-right: 2px solid transparent; */
   outline: none;
 }
 
@@ -1664,8 +1662,18 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.breadcrumbs-home:focus {
+  outline: 3px solid #83B3D3;);
+  border-radius: 4px;
+}
+
 .breadcrumbs-item:hover {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-item:focus {
+  outline: 3px solid #83B3D3;);
+  border-radius: 4px;
 }
 
 .breadcrumbs-item:active {
@@ -1751,7 +1759,7 @@ body {
 
 .filter-select {
   position: relative;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   width: 287px;
@@ -2184,7 +2192,7 @@ body {
 }
 
 .quantity-select {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
