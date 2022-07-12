@@ -1706,8 +1706,9 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+  background-color: transparent;
   text-decoration: none;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
   border-radius: 4px;
   outline: 0;
 }
@@ -1871,56 +1872,6 @@ body {
   -webkit-column-gap: 20px;
   -moz-column-gap: 20px;
   column-gap: 20px;
-}
-
-.product-card>*:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.product-card>*:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-
-.product-card>*:nth-child(3) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-}
-
-.product-card>*:nth-child(4) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-}
-
-.product-card>*:nth-child(5) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-}
-
-.product-card>*:nth-child(6) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 3;
-}
-
-.product-card>*:nth-child(7) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-}
-
-.product-card>*:nth-child(8) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 3;
-}
-
-.product-card>*:nth-child(9) {
-  -ms-grid-row: 9;
-  -ms-grid-column: 1;
-}
-
-.product-card>*:nth-child(10) {
-  -ms-grid-row: 9;
-  -ms-grid-column: 3;
 }
 
 .product-card:last-child {
