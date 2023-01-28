@@ -4,11 +4,6 @@ const form = document.querySelector(".search-modal");
 const closeBtn = document.querySelector(".modal-close-button");
 
 if (form) {
-  // btn.addEventListener("click", (e) => {
-  //   e.preventDefault();
-  //   form.classList.add("is-active");
-  // });
-
   btns.forEach((button) => {
     button.addEventListener("click", (e) => {
       e.preventDefault();

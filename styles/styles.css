@@ -151,8 +151,6 @@ body {
   background-color: #E5E5E5;
 }
 
-/* навигация */
-
 .navigation {
   position: relative;
   display: -webkit-box;
@@ -335,7 +333,6 @@ body {
   background-color: #E5E5E5;
 }
 
-/* Модальное окно */
 .search-modal {
   position: fixed;
   top: 0;
@@ -760,8 +757,6 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* первый блок с заходной страницей */
-
 .intro-image {
   position: relative;
   display: -webkit-box;
@@ -801,8 +796,6 @@ body {
   display: block;
 }
 
-/* Второй блок со слоганом Седоны */
-
 .introduction {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -834,8 +827,6 @@ body {
   width: 660px;
   margin: 0;
 }
-
-/* Блок с преимуществами и причинами посетить Седону */
 
 .advantages {
   counter-set: advantage;
@@ -887,8 +878,6 @@ body {
   color: #FFFFFF;
   background-color: #82B3D3;
 }
-
-/* направляет ряд с причинами посещения горизонтально */
 
 .to-do-list {
   display: -webkit-box;
@@ -946,8 +935,6 @@ body {
   margin: 0;
   width: 230px;
 }
-
-/* Упаковывает одинокие преимущества в один элемент. Создает горизонтальный поток */
 
 .advantage-item-long {
   display: -webkit-box;
@@ -1028,8 +1015,6 @@ body {
   height: auto;
 }
 
-/* Блок с поиском */
-
 .search-conversion {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1061,8 +1046,6 @@ body {
 .search-conversion-button {
   width: 572px;
 }
-
-/* Блок с подпиской */
 
 .subscription-block-main {
   display: -webkit-box;
@@ -1151,8 +1134,6 @@ body {
 .email-submit-button:disabled {
   background-color: #E5E5E5;
 }
-
-/* Футер */
 
 .page-footer-container {
   display: -webkit-box;
@@ -1294,10 +1275,6 @@ body {
 .footer-phone-link:disabled {
   color: #E5E5E5;
 }
-
-/* работа с каталогом */
-/* делаем фильтр */
-/* настройка потока для фильтров */
 
 .hotels-filter {
   display: -webkit-box;
@@ -1563,7 +1540,6 @@ body {
   padding: 12px 35px 12px 16px;
   border: 2px solid #FFFFFF;
   border-radius: 0 4px 4px 0;
-  /* border-left: 2px solid transparent; */
   outline: none;
 }
 
@@ -1734,7 +1710,6 @@ body {
 }
 
 
-/* верстка блоков представления карточек, сортировки, информации о колиечтсве выведенных позиций */
 .filter-tab {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1832,15 +1807,11 @@ body {
   border-color: rgba(104, 162, 202, 1);
 }
 
-/* Карточки */
-
-/* внутренний стакан, чтобы удерживать именно три карточки */
 .product-field {
   width: 1056px;
   margin: 0 auto;
 }
 
-/* ставит три карточки в ряд */
 .product-list {
   display: -ms-grid;
   display: grid;
@@ -1856,8 +1827,6 @@ body {
   -webkit-padding-start: 0;
   padding-inline-start: 0;
 }
-
-/* ровно просчитывает размер карточки */
 
 .product-card {
   width: 340px;
@@ -2042,9 +2011,6 @@ body {
   background-color: #E5E5E5;
 }
 
-/* пагинация */
-
-/* Верстка элементов пагинатора */
 .paginator {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2089,8 +2055,6 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
-
-/* оформление элементов пагинатора */
 
 .pagination-item {
   font-weight: 700;
